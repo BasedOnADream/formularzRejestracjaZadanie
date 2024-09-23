@@ -1,0 +1,89 @@
+:root
+{
+    background-color: #EDE712;
+}
+
+body
+{
+    margin: 0;
+    margin: 50px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    height: calc(100vh - 140px);
+    padding: 20px;
+    background-color: white;
+}
+
+input:not(input[type=radio]):not(input[type=checkbox]), select
+{
+    font-family: "Manrope", sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    width: 33.3%;
+    box-sizing: border-box;
+    border:none;
+    border-left: 2px #1218ED solid
+}
+
+input:focus, select:focus
+{
+    outline: 0;
+    border: 2px #1218ED solid
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div
+{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+button
+{
+    width: 250px;
+    font-family: "Manrope", sans-serif;
+    padding: 5px 15px 5px 15px;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #1218ED;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label{user-select: none;}
+
+span
+{
+    border-left: 2px #1218ED solid;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+input[type=radio], input[type=checkbox]
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color:#1218ED
+}
+
+#error{color: red;}
+
+@media screen and (max-width: 900px)
+{
+    input:not(input[type=radio]):not(input[type=checkbox]), select, button
+    {
+        width: 100%;
+    }
+}
+
